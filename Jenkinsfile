@@ -28,6 +28,12 @@ pipeline {
             }
         }
 
+        stage('Publish Artifacts') {
+            steps {
+                echo 'Publish Artifacts'
+            }
+        }
+
     }
 
 

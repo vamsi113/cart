@@ -27,6 +27,7 @@ pipeline {
                 echo 'Prepare Artifacts'
             }
         }
+
         stage('Publish Artifacts') {
             steps {
                 echo 'Publish Artifacts'

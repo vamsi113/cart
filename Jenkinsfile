@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     stages {
         stage('Code Quality') {
             steps {
@@ -42,15 +41,11 @@ pipeline {
                 echo 'Prepare Artifacts'
             }
         }
-
         stage('Publish Artifacts') {
             when { tag "*" }
             steps {
                 echo 'Publish Artifacts'
             }
         }
-
     }
-
-
 }

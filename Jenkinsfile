@@ -42,7 +42,6 @@ pipeline {
                 echo 'Prepare Artifacts'
             }
         }
-
         stage('Publish Artifacts') {
             when { tag "*" }
             steps {
@@ -51,6 +50,4 @@ pipeline {
         }
 
     }
-
-
 }

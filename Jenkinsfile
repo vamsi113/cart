@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     stages {
         stage('Code Quality') {
             steps {
@@ -48,6 +47,5 @@ pipeline {
                 echo 'Publish Artifacts'
             }
         }
-
     }
 }

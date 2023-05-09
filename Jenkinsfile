@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Style Checks') {
             when {
-                anyof{
+                anyOf{
                      branch "main"
                      tag "*"
                 }
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Unit Tests') {
             when {
-                anyof{
+                anyOf{
                      branch "main"
                      tag "*"
                 }
